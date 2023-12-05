@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="Game" descriprion="Rock-Papper-Scissor"> 
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Rock Papper Scissor</title>
+	<link rel="icon" image="x-icon" href="./assets/favicon.png">
+	<link rel="stylesheet" type="text/css" href="./assets/style.css">
+</head>
+<body>
+	<header>
+		<h1>Rock Papper Scissor</h1>
+	</header>
+	<div class="score-board">
+		<div id="user-label" class="badge">Usr</div>
+		<div id="computer-label" class="badge">Com</div>
+		<span id="user-score">0</span>:<span id="computer-score">0</span>
+	</div>
+
+	<div class="result">
+		<p>Papper Covers Rock. <span>You Win!</span></p>
+	</div>
+
+	<div class="choices">
+		<div class="choice rock" id="r">
+			<img src="./assets/rock.png" alt="">
+		</div>
+
+		<div class="choice papper" id="p">
+			<img src="./assets/papper.png" alt="">
+		</div>
+
+		<div class="choice scissor" id="s">
+			<img src="./assets/sicssor.png" alt="">
+		</div>
+	</div>
+
+	<p id="action-message"><code>Make Your Moves</code></p>
+	
+	<script src="./assets/app.js" charset="utf-8"></script>
+</body>
+</html>

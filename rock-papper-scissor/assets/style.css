@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background-size: 150px 100px;
+	background-image: url(./assets/back.jpg);
+}
+header {
+	background-color: white;
+	padding: 20px;
+}
+header > h1 {
+	color: black;
+	text-align: center;
+	font-family: 'Poppins', sans-serif;
+}
+p > span {
+	color: black;
+	border: 5px solid white;
+	border-radius: 10px; 
+}
+.score-board {
+	margin: 20px auto;
+	border: 10px solid white;
+	border-radius: 4px;
+	text-align: center;
+	width: 200px;
+	color: black;
+	font-family: 'Poppins', sans-serif;
+	font-size: 50px;
+	padding: 15px 20px;
+	position: relative;
+}
+.badge {
+	background-color: red;
+	color: white;
+	font-size: 20px;
+	padding: 2px 10px;
+	font-family: 'Poppins', sans-serif;
+}
+#user-label {
+	position: absolute;
+	top: 30px;
+	left: -30px;
+	border: 3px solid white;
+}
+#computer-label {
+	position: absolute;
+	top: 30px;
+	right: -35px;
+	border: 3px solid white;
+}
+.result {
+	font-size: 50px;
+	color: black;
+}
+.result > p {
+	text-align: center;
+	font-weight: bold;
+	font-family: 'Poppins', sans-serif;
+}
+.choices {
+	margin: 50px 0;
+	text-align: center;
+}
+.choice {
+	display: inline-block;
+	border: 10px solid white;
+	border-radius: 50%;
+	margin: 0 20px;
+	padding: 20px;
+	transition: all 0.3 ease;
+}
+.choice img {
+	width: 100px;
+	padding: 10px;
+}
+.rock {
+	background-color: yellow;		
+}
+.papper {
+	background-color: rgb(255, 30, 30);
+}
+.scissor {
+	background-color: rgb(0, 255, 0);
+	cursor: pointer;
+}
+.choice:hover {
+	cursor: pointer;
+	background-color: whitesmoke;
+}
+.choice:active {
+	background-color: aqua;
+}
+
+#action-message {
+	text-align: center;
+	font-family: 'Poppins', sans-serif;
+	color: black;
+	font-weight: bold;
+	font-size: 20px;
+}
+/* JS change */
+
+.green-glow {
+	border: 10px solid rgb(0, 255, 0);
+	box-shadow: 0 0 30px rgb(0, 255, 0);
+}
+.red-glow {
+	border: 10px solid red;
+	box-shadow: 0 0 30px red;
+}
+.yellow-glow {
+	border: 10px solid purple;
+	box-shadow: 0 0 30px purple;
+}
+@media screen and (max-width: 768px ) {
+	.choice {
+		padding: 17px;
+	}
+}
