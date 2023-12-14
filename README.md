@@ -1,3 +1,6 @@
+<h2>Little JavaScript</h2>
+<p>A repo to keep some javascript small projects i've build while learning JS. Feel free to use, modify and share as you like.</p>
+<br>
 <table>
   <tr>
     <th>Projects</th>
